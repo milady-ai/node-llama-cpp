@@ -4,6 +4,10 @@ node_modules
 .DS_Store
 *.cpuprofile
 
+# /dist and /templates/packed are committed on milady release branches
+# so `bun install` from a github URL gets a complete drop-in package
+# (bun does not run devDeps + tsc on github URL installs). The base
+# branches still ignore them; release branches override via `git add -f`.
 /dist
 /docs-site
 /docs/api
