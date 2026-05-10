@@ -119,7 +119,8 @@ export type LlamaContextOptions = {
      * Use with caution.
      * This option may change or get removed in the future without a breaking change version.
      */
-    experimentalKvCacheKeyType?: "currentQuant" | keyof typeof GgmlType | GgmlType,
+    experimentalKvCacheKeyType?: "currentQuant" | keyof typeof GgmlType | GgmlType
+        | "tbq3_0" | "tbq4_0" | "tbq3_tcq" | "qjl1_256" | "q4_polar",
 
     /**
      * The type of the value for the KV cache tensors used in this context.
@@ -135,7 +136,8 @@ export type LlamaContextOptions = {
      * Use with caution.
      * This option may change or get removed in the future without a breaking change version.
      */
-    experimentalKvCacheValueType?: "currentQuant" | keyof typeof GgmlType | GgmlType,
+    experimentalKvCacheValueType?: "currentQuant" | keyof typeof GgmlType | GgmlType
+        | "tbq3_0" | "tbq4_0" | "tbq3_tcq" | "qjl1_256" | "q4_polar",
 
     /**
      * When using SWA (Sliding Window Attention) on a supported model,

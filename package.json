@@ -1,7 +1,7 @@
 {
-  "name": "node-llama-cpp",
-  "version": "0.1.0",
-  "description": "Run AI models locally on your machine with node.js bindings for llama.cpp. Enforce a JSON schema on the model output on the generation level",
+  "name": "@milady-ai/node-llama-cpp",
+  "version": "3.18.1-milady.1",
+  "description": "Milady-controlled fork of node-llama-cpp v3.18.1 with extended GgmlType enum (TBQ3_0, TBQ4_0, QJL1_256, Q4_POLAR) for milady-ai/llama.cpp consumers. Run AI models locally on your machine with node.js bindings for llama.cpp. Enforce a JSON schema on the model output on the generation level.",
   "main": "./dist/index.js",
   "type": "module",
   "types": "./dist/index.d.ts",
